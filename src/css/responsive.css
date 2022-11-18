@@ -1,0 +1,40 @@
+@media (max-width: 575px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container .introduction {
+    border-radius: 0 0 10px 10px;
+  }
+  .container .ilustration {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .container .introduction {
+    height: 500px;
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+  }
+  .container .introduction h1 {
+    font-size: 25px;
+  }
+  .container .introduction h1 span {
+    font-size: 25px;
+  }
+
+  .container .introduction .intro {
+    font-size: 17px;
+    padding-top: 13px;
+    line-height: 20px;
+  }
+
+  .container .introduction .statistic {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

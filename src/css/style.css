@@ -1,0 +1,84 @@
+body {
+  background-color: var(--main-background);
+  font-family: "Inter", sans-serif;
+  max-width: 1300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.container .introduction {
+  border-radius: 10px 0 0 10px;
+  font-family: "Lexend Deca", sans-serif;
+  height: 446px;
+  width: 570px;
+  background-color: var(--card-background);
+  padding: 70px;
+}
+
+.container .introduction h1 {
+  color: var(--main-heading-stats);
+  font-weight: 700;
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.container .introduction h1 span {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--accent);
+}
+
+.container .introduction .intro {
+  font-size: 18px;
+  color: var(--main-paragraph);
+  padding-top: 19px;
+  line-height: 25px;
+}
+
+.container .introduction .statistic {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.container .introduction .statistic .info .counter {
+  color: var(--main-heading-stats);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container .introduction .statistic .info .counter-type {
+  color: var(--stat-headings);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.container .ilustration {
+  position: relative;
+  background: purple;
+  overflow: hidden;
+  height: 444px;
+  width: 540px;
+  border-radius: 0 10px 10px 0;
+}
+
+.container .ilustration::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
